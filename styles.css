@@ -16,16 +16,28 @@ body {
 /* =================HEADER================ */
 
 header {
-    height: 64px;
+    height: auto;
     background-color: #F7C948;
+}
+
+/* .logo {
+    max-width: 1040px;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    margin: auto;
+} */
+
+.logo-wrapper {
+    max-width: 1040px;
+    padding: 12px 0;
+    margin: auto;
 }
 
 .logo {
     max-width: 1040px;
     display: flex;
     align-items: center;
-    padding: 12px 0;
-    margin: auto;
 }
 
 .logo-icon {
@@ -41,15 +53,12 @@ header {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-    .logo {
+    .logo-wrapper {
         padding: 12px 32px;
     }
 }
 
 @media only screen and (max-width: 767px) {
-    header {
-        height: 90px;
-    }
 
     .logo {
         flex-direction: column;
@@ -374,7 +383,51 @@ header {
     }
 }
 
+/* ================FOOTER================ */
 
+footer {
+    width: 100%;
+    background-color: #F7C948;
+}
 
+.footer-wrapper {
+    max-width: 1040px;
+    padding: 12px 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
-    
+.footer-info {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .footer-wrapper {
+        padding: 12px 32px;
+        max-width: 704px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .footer-wrapper {
+        flex-direction: column;
+    }
+    .logo {
+        flex-direction: column;
+    }
+
+    .logo-name {
+        padding-left: 0;
+        
+    }
+
+    .footer-info {
+        padding-top: 16px;
+        text-align: center;
+    }
+}

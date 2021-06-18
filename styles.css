@@ -5,6 +5,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    color: #3B3B3B;
     background-color: white;
     margin: 0;
 }
@@ -80,13 +81,20 @@ header {
 .button {
     display: block;
     width: 160px;
+    height: 48px;
+    background-image: url(images/Button2x.png);
+    background-size: contain;
     margin-bottom: -77px;
 }
 
 .main-image {
     width: 600px;
+    height: 554px;
+    background-image: url(images/main-image1x.png);
+    background-size: contain;
     float: right;
 }
+
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
 
@@ -106,7 +114,7 @@ header {
 
     .main-image {
         width: 434px;
-        float: right;
+        height: 399px;
     }
 
 }
@@ -141,15 +149,20 @@ header {
     }
 }
 
+/* =================APP FEATURES================ */
+
 .app-features {
     width: 100%;
-    height: 100px;
+    height: auto;
     background-color: #F7C948;
-    clear: right;
+    clear: both;
+    padding: 64px 0;
 }
 
 .feature-fast {
-    padding: 64px 0 0 200px;
+    position: relative;
+    width: 1040px;
+    margin: auto;
 }
 
 .feature-fast-photo {
@@ -158,33 +171,43 @@ header {
     background-color: #ffffff;
     background-image: url(images/Photo01.jpg);
     background-size: contain;
-    margin-bottom: -483px;
 }
 
 .feature-fast-description {
+    position: absolute;
+    top: 64px;
+    left: 264px;
     padding: 32px;
     display: inline-block;
     background-color: #ffffff;
-    vertical-align: top;
-    margin-left: 264px;
 }
 
 
-.feature-fast-description h3 {
+.feature-subheading {
     width: 360px;
     margin: 0;
     margin-bottom: 16px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 600;
+    color: #626262;
 }
 
-.feature-fast-description p {
+.feature-text {
     width: 360px;
     margin: 0;
 }
 
-/* ============== */
+/* ----------------------- */
+
+.feature-easy {
+    position: relative;
+    width: 1040px;
+    margin: auto;
+    margin-top: -64px;
+    display: flex;
+    justify-content: flex-end;
+}
 
 .feature-easy-photo {
     width: 424px;
@@ -195,24 +218,11 @@ header {
 }
 
 .feature-easy-description {
+    position: absolute;
+    bottom: 64px;
+    right: 264px;
     padding: 32px;
-    /* display: inline-block;
+    display: inline-block;
     background-color: #ffffff;
-    vertical-align: top;
-    margin-left: 264px; */
 }
 
-
-.feature-easy-description h3 {
-    width: 360px;
-    margin: 0;
-    margin-bottom: 16px;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 600;
-}
-
-.feature-easy-description p {
-    width: 360px;
-    margin: 0;
-}

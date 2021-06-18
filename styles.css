@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
@@ -84,6 +87,9 @@ header {
     height: 48px;
     background-image: url(images/Button2x.png);
     background-size: contain;
+}
+
+.usp-btn {
     margin-bottom: -77px;
 }
 
@@ -108,7 +114,7 @@ header {
         line-height: 36px;
     }   
 
-    .button {
+    .usp-btn {
         margin-bottom: -55px;
     }
 
@@ -140,7 +146,7 @@ header {
         margin: auto;
     }
 
-    .button {
+    .usp-btn {
         margin: auto;
     }
 
@@ -226,3 +232,149 @@ header {
     background-color: #ffffff;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .app-features {
+        padding: 64px 32px;
+    }
+
+    .feature-fast {
+        width: auto;
+    }
+
+    .feature-fast-photo {
+        width: 344px;
+        height: 444px;
+    }
+
+    .feature-easy {
+        width: auto;
+    }
+
+    .feature-easy-photo {
+        width: 344px;
+        height: 444px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .app-features {
+        padding: 64px 16px;
+    }
+
+    .feature-fast {
+        width: 328px;
+    }
+
+    .feature-easy {
+        width: 328px;
+        margin-top: 48px;
+    }
+
+    .feature-fast-photo {
+        width: 240px;
+        height: 309px;
+        margin-top: 32px;
+    }
+
+    .feature-easy-photo {
+        width: 240px;
+        height: 309px;
+    }
+
+    .feature-fast-description {
+        padding: 16px;
+        position: absolute;
+        top: -32px;
+        left: 86px;
+    }
+
+    .feature-easy-description {
+        padding: 16px;
+        position: absolute;
+        bottom: -32px;
+        right: 86px;
+    }
+
+    .feature-subheading {
+        width: 210px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 22px;
+    }
+    
+    .feature-text {
+        width: 210px;
+        margin: 0;
+    }
+}
+
+/* =================CTA===================== */
+
+.cta-screen {
+    width: 1040px;
+    margin: 128px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta-image {
+    width: 600px;
+    height: 421px;
+    background-color: #F7C948;
+    background-image: url(images/cta-image.jpg);
+    background-size: contain;
+}
+
+.cta-text {
+    width: 336px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 32px;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+    .cta-screen {    
+        width: 704px;
+        margin: 128px auto;
+    }
+
+    .cta-image {
+        width: 344px;
+        height: 241px;
+    }
+}
+
+
+
+@media only screen and (max-width: 767px) {
+    .cta-screen {    
+        width: auto;
+        margin: 96px auto;
+        flex-direction: column;
+    }
+
+    .cta-image {
+        width: 328px;
+        height: 229px;
+        margin-bottom: 32px;
+    }
+
+    .cta-text {
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .cta-btn {
+        margin: auto;
+    }
+}
+
+
+
+
+    

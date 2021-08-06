@@ -104,8 +104,9 @@ header {
 
 .main-image {
     width: 600px;
-    height: 554px;
-    background-image: url(images/main-image1x.png);
+    height: 478px;
+    margin-bottom: 73px;
+    background-image: url(images/Concept-Image1x.png);
     background-size: contain;
     float: right;
 }
@@ -129,7 +130,8 @@ header {
 
     .main-image {
         width: 434px;
-        height: 399px;
+        height: 346px;
+        margin-bottom: 81px;
     }
 
 }
@@ -332,8 +334,8 @@ header {
 .cta-image {
     width: 600px;
     height: 421px;
-    background-color: #F7C948;
-    background-image: url(images/cta-image.jpg);
+    background-color: #ffffff;
+    background-image: url(images/Samsung-mockup1x.png);
     background-size: contain;
 }
 
@@ -403,6 +405,11 @@ footer {
 .footer-info {
     font-size: 12px;
     line-height: 14px;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: #3B3B3B;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {

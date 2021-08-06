@@ -90,23 +90,28 @@ header {
     padding-bottom: 48px;
 }
 
-.button {
+.google-play-button {
     display: block;
     width: 160px;
     height: 48px;
     background-image: url(images/Button2x.png);
     background-size: contain;
+
 }
 
 .usp-btn {
+    width: 160px;
+    height: 48px;
+    display: block;
     margin-bottom: -77px;
+   
 }
 
 .main-image {
     width: 600px;
     height: 478px;
     margin-bottom: 73px;
-    background-image: url(images/Concept-Image1x.png);
+    background-image: url(images/Concept-Image2x-JPG.jpg);
     background-size: contain;
     float: right;
 }
@@ -346,6 +351,11 @@ header {
     line-height: 28px;
     padding-bottom: 32px;
 
+}
+
+.cta-btn {
+    display: block;
+    width: 160px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
